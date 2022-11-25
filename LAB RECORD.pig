@@ -1,10 +1,10 @@
 [cloudera@quickstart ~]$ hdfs dfs -ls
 Found 5 items
-drwx------   - cloudera cloudera          0 2022-11-24 21:00 .Trash
+/* drwx------   - cloudera cloudera          0 2022-11-24 21:00 .Trash
 drwx------   - cloudera cloudera          0 2022-11-24 22:17 .staging
 drwxr-xr-x   - cloudera cloudera          0 2022-11-24 21:47 Desktop
 drwxr-xr-x   - cloudera cloudera          0 2022-11-24 21:54 SHARWIN
-drwxr-xr-x   - cloudera cloudera          0 2022-09-30 21:14 SJCOCT22
+drwxr-xr-x   - cloudera cloudera          0 2022-09-30 21:14 SJCOCT22 */
 
 
 [cloudera@quickstart ~]$ hadoop fs -copyFromLocal /home/cloudera/Desktop/emp.csv /user/cloudera/SHARWIN
@@ -12,7 +12,7 @@ drwxr-xr-x   - cloudera cloudera          0 2022-09-30 21:14 SJCOCT22
 
 grunt> A = load '/user/cloudera/SHARWIN/emp.csv' using PigStorage(',') as (eid:int, ename:chararray, epos:chararray, esal:int, ecom:int, edpno:int);
 grunt> dump A;
-(,ename,epos,,,)
+/*(,ename,epos,,,)
 (7839,KING,PRESIDENT,5000,,10)
 (7782,CLARK,MANAGER,2450,,10)
 (7934,MILLER,CLERK,1300,,10)
@@ -26,5 +26,5 @@ grunt> dump A;
 (7900,JAMES,CLERK,950,,30)
 (7698,BLAKE,MANAGER,2850,,30)
 (7654,MARTIN,SALESMAN,1250,1400,30)
-(7521,WARD,SALESMAN,1250,500,30)
+(7521,WARD,SALESMAN,1250,500,30)*/
 
